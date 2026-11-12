@@ -1,0 +1,6 @@
+{
+  "name": "MIX MART Coffee Bar",
+  "description": "Elegant white and gray coffee menu with exterior categories, Mohamed Hany property certificate, pickup orders, owner customizer, and sales analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

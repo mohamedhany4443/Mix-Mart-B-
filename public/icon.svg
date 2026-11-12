@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Fine Border Ring -->
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="#334155" stroke-width="4" stroke-opacity="0.6" />
+
+  <!-- Center Decorative Crest / Glow -->
+  <circle cx="256" cy="230" r="160" fill="#1e293b" opacity="0.5" filter="url(#shadow)" />
+  <circle cx="256" cy="230" r="140" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-dasharray="8 6" opacity="0.6" />
+
+  <!-- Stylized Emblem: Luxury Serif 'M' with Coffee Steam -->
+  <g transform="translate(0, -10)">
+    <!-- Steam Swirls -->
+    <path d="M236 125 C230 110, 240 95, 234 80" fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round" opacity="0.85" />
+    <path d="M256 120 C250 100, 262 85, 256 68" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" />
+    <path d="M276 125 C270 110, 280 95, 274 80" fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round" opacity="0.85" />
+
+    <!-- Coffee Cup Silhouette -->
+    <path d="M180 150 L332 150 C332 150, 336 240, 256 240 C176 240, 180 150, 180 150 Z" fill="#ffffff" filter="url(#shadow)" />
+    <!-- Cup Handle -->
+    <path d="M328 165 C355 165, 360 205, 325 212" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" />
+    <!-- Cup Saucer -->
+    <path d="M160 252 L352 252" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="round" />
+
+    <!-- Center 'M' Letter inside Cup -->
+    <text x="256" y="212" font-family="Georgia, serif" font-size="58" font-weight="900" fill="#0f172a" text-anchor="middle" letter-spacing="2">M</text>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="256" y="380" font-family="'Outfit', -apple-system, sans-serif" font-size="52" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="6">MIX MART</text>
+  <text x="256" y="420" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#fbbf24" text-anchor="middle" letter-spacing="4">SPECIALTY COFFEE</text>
+  <text x="256" y="450" font-family="sans-serif" font-size="16" font-weight="600" fill="#94a3b8" text-anchor="middle" letter-spacing="2">ميكس مارت</text>
+</svg>
